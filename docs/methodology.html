@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Traffic monitoring methodology for Hermis Makawa's project.">
+  <title>Method | Traffic Monitor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">NT</span>
+      <span>Traffic Monitor<span class="brand-sub">Security / analysis</span></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Overview</a>
+      <a class="active" href="methodology.html">Method</a>
+      <a href="results.html">Results</a>
+    </nav>
+    <a class="repo-link" href="https://github.com/yourusername/hermis-network-traffic-monitoring-system" target="_blank" rel="noopener">↗ Repository</a>
+  </header>
+
+  <main class="inner-page">
+    <div class="page-heading">
+      <p class="eyebrow">02 / METHOD</p>
+      <h1>Capture the flow.<br><em>Interpret the signal.</em></h1>
+      <p class="lead">The workflow begins with packet collection and ends with a focused interpretation of protocol usage, host behavior, and unusual communication patterns.</p>
+    </div>
+
+    <section class="method-layout">
+      <div class="method-steps">
+        <article>
+          <span class="step-no">01</span>
+          <div>
+            <h2>Collect traffic</h2>
+            <p>Capture a defined sample of packet data in an authorised lab environment using tshark or Wireshark-style tooling.</p>
+          </div>
+        </article>
+        <article>
+          <span class="step-no">02</span>
+          <div>
+            <h2>Summarise protocols</h2>
+            <p>Review protocol distribution, common ports, and host-to-host conversation patterns to see what the network is routinely doing.</p>
+          </div>
+        </article>
+        <article>
+          <span class="step-no">03</span>
+          <div>
+            <h2>Identify anomalies</h2>
+            <p>Look for repeated patterns, unusual destinations, suspicious timing, or unexpected protocol usage that deserve attention.</p>
+          </div>
+        </article>
+        <article>
+          <span class="step-no">04</span>
+          <div>
+            <h2>Document findings</h2>
+            <p>Record the issues, supporting evidence, and a brief explanation so the final report is clear and defensible.</p>
+          </div>
+        </article>
+      </div>
+
+      <aside class="data-panel">
+        <div class="panel-top"><span>ANALYSIS REGISTER</span><span>TRAFFIC</span></div>
+        <div class="feature-list">
+          <div><b>Format</b><span>PCAP / tshark</span></div>
+          <div><b>Signals</b><span>Protocol / host / flow</span></div>
+          <div><b>Focus</b><span>Normal vs unusual</span></div>
+          <div><b>Output</b><span>Evidence + summary</span></div>
+        </div>
+        <div class="panel-foot"><span class="pulse"></span> NETWORK INTELLIGENCE</div>
+      </aside>
+    </section>
+
+    <section class="method-note">
+      <span class="note-mark">i</span>
+      <p><b>Context matters:</b> a single packet dump is not a verdict. The value of the project comes from interpreting what the traffic suggests, alongside the known environment and expected behavior of the network.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>HERMIS MAKAWA · SERIAL 15</span>
+    <span>Security lab prototype</span>
+    <a href="https://github.com/yourusername/hermis-network-traffic-monitoring-system" target="_blank" rel="noopener">REPOSITORY ↗</a>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
